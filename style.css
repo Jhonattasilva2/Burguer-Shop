@@ -1,0 +1,705 @@
+:root {
+    --gray: #373A3C;
+    --blue: #FFBF00;
+    --white: #FFF;
+    --lightyellow: #FFFF00;
+    --light: #2790c6;
+
+}
+
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray);
+    scroll-behavior: smooth;
+}
+
+
+a {
+    transition: 0.5s;
+}
+
+#sidebar {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    background-color: var(--blue);
+    padding-top: 40px;
+}
+
+#sidebar h1 {
+    color: var(--white);
+    font-size: 28px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#sidebar a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#sidebar a:hover {
+    color: var(--lightyellow);
+}
+
+#sidebar li {
+    padding: 20px;
+}
+
+.sidebar-conteiner {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
+
+.logo-burguer {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*content*/
+
+.content {
+    position: absolute;
+    left: 300px;
+    width: calc(100% - 300px);
+
+}
+
+.content h1, .content h2 {
+    color: var(--blue);
+    margin-bottom: 30px;
+}
+
+.content h1 {
+    font-size: 48px;
+}
+
+.content h2 {
+    font-size: 35px;
+}
+
+
+section {
+    padding-left: 50px;
+}
+
+/* Welcome */
+
+#session-welcome {
+    padding-left: 0;
+}
+
+.session-welcome-content {
+    padding-left: 50px;
+}
+
+#session-welcome .banner {
+    height: 500px;
+    background-image: url(./images/burguers.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.banner {
+    width: 100%;
+}
+
+#session-welcome-content h1 {
+    margin-top: 70px;
+}
+
+#session-welcome::after, #session-about::after {
+    content: "";
+    display: block;
+    clear: both;
+    margin-bottom: 100px;
+}
+
+.session-minibanner {
+    width: 260px;
+    height: 360px;
+    background-image: url(./images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    float: left;
+    border-radius: 5px;
+}
+
+.session-description {
+    position: absolute;
+    left: 330px;
+    padding-right: 30px;
+}
+
+.session-description p {
+    line-height: 1.8;
+    font-size: 15px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+}
+
+.session-welcome-btn, form input[type=submit] {
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: 0.5s;
+    display: block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-left: 1rem;
+}
+
+.session-welcome-btn:hover, form input[type=submit]:hover {
+    background-color: var(--light);
+}
+
+/*Session about */
+
+#session-about .session-minibanner {
+    float: right;
+    margin-right: 50px;
+    background-image: url(./images/banner3.jpg);
+}
+
+#session-about .session-description {
+    position: absolute;
+    left: 25px;
+    width: calc(100% - 400px);
+}
+
+/* Galeries */ 
+
+.banner-galeria {
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: 200px;
+}
+.banner-galeria:hover {
+    transform: scale(1.5);
+}
+
+#burguers, #beverages, #desserts {
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+.burgers {
+    height: 200px;
+    width: 18.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+    border-radius: 5px;
+}
+
+#img1 {
+    background-image: url(./images/burguer1.jpg);
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img2 {
+    background-image: url(./images/burguer2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img3 {
+    background-image: url(./images/burguer3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img4 {
+    background-image: url(./images/burguer4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img5 {
+    background-image: url(./images/burguer5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 0;
+}
+
+.beverages {
+    height: 200px;
+    width: 18.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+    border-radius: 5px;
+}
+
+#img6 {
+    background-image: url(./images/beverages1.jpg);
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img7 {
+    background-image: url(./images/beverages2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img8 {
+    background-image: url(./images/beverages3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img9 {
+    background-image: url(./images/beverages4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img10 {
+    background-image: url(./images/beverages5.jpg);
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desserts {
+    height: 200px;
+    width: 18.8%;
+    margin-left: .5%;
+    margin-right: .5%;
+    border-radius: 5px;
+}
+
+#img11 {
+    background-image: url(./images/dessert1.jpg);
+    margin-left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img12 {
+    background-image: url(./images/dessert2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img13 {
+    background-image: url(./images/dessert3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img14 {
+    background-image: url(./images/dessert4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img15 {
+    background-image: url(./images/dessert5.jpg);
+    margin-right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Contact */ 
+
+#form-contato {
+    width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+    display: block;
+    border: 1px solid var(--blue);
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+    border-radius: 5px;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+    border-color: var(--light);
+}
+
+#form-contato textarea {
+    height: 150px;
+}
+
+#form-contato ::placeholder {
+    color: lightgray;
+}
+
+#form-contato input[type=submit] {
+    margin-left: 0;
+    font-size: 16px;
+    width: 180px;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    height: 100px;
+    padding-top: 150px;
+   
+    color: var(--blue);
+   
+}
+
+footer p {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+@media only screen and (max-width: 1125px) {
+    .session-description p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+
+    .banner-galeria {
+        height: 200px;
+        width: 18%;
+        margin-left: .5%;
+        margin-right: .5%;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (max-width: 1125px) {
+    .session-description p {
+        line-height: 1.3;
+        font-size: 14.5px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+   .logo-burguer {
+       display: none;
+   }
+
+    #sidebar {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 80px;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .sidebar-conteiner {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        width: 90px;
+    }
+
+    #sidebar h1 {
+        width: 100px;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        align-items: center;
+        display: flex;
+    }
+
+    .content {
+        position: absolute;
+        left: 0px;
+        width: 100%;
+    }
+
+    .session-description p {
+        line-height: 1.8;
+        font-size: 15px;
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+
+    .banner-galeria {
+        height: 200px;
+        width: 18.8%;
+        margin-left: .5%;
+        margin-right: .5%;
+        border-radius: 5px;
+    }
+
+    @media only screen and (max-width: 950px) {
+
+        #sidebar h1 {
+            font-size: 23px;
+        }
+
+        #sidebar a {
+            font-size: 16px;
+        }
+
+        #sidebar li {
+            padding: 16px;
+            align-content: center;
+            align-self: center;
+        }
+
+
+        nav {
+            align-content: center;
+            display: flex;
+        }
+
+        .banner-galeria {
+            height: 200px;
+            width: 18%;
+            margin-left: .5%;
+            margin-right: .5%;
+            border-radius: 5px;
+        }
+
+        .session-description p {
+            line-height: 1.7;
+            font-size: 14px;
+            margin-bottom: 30px;
+            margin-left: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 850px) {
+        .session-welcome-content h1 {
+            font-size: 35px;
+        }
+
+        .session-content h1 {
+            font-size: 35px;
+        }
+
+        .session-description p {
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 30px;
+            margin-left: 15px;
+        }
+
+        .banner-galeria {
+            height: 200px;
+            width: 18%;
+            margin-left: .5%;
+            margin-right: .5%;
+            border-radius: 5px;
+        }
+
+        #sidebar a {
+            font-size: 14.5px;
+        }
+
+        #sidebar li {
+            padding: 8px;
+        }
+    }
+
+    @media only screen and (max-width: 750px) {
+        .session-description p {
+            line-height: 1.4;
+            font-size: 13px;
+            margin-bottom: 30px;
+            margin-left: 15px;
+        }
+
+        #sidebar a {
+            font-size: 13.8px;
+        }
+
+        #sidebar li {
+            padding: 8px;
+            width: 70px;
+        }
+
+        #session-welcome .banner {
+            background-image: url(./images/novobanner.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 250px;
+        }
+
+        .session-welcome-btn {
+            width: 83px;
+            height: 20px;
+            font-size: 13px;
+            padding: 12px 12px;
+        }
+    }
+
+    @media only screen and (max-width: 680px) {
+        #sidebar h1 {
+            font-size: 17px;
+            width: 60px;
+            margin-right: 0.7rem;
+            margin-left: 0.7rem;
+        }
+
+        #sidebar {
+            height: 61px;
+        }
+
+        #sidebar li {
+            padding: 6.5px;
+            width: 63px;
+        }
+
+        .session-minibanner {
+            width: 200px;
+            height: 300px;
+        }
+
+        .session-description p {
+            line-height: 1.3;
+            font-size: 13px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+            text-align: justify;
+        }
+
+        .session-description {
+            left: 280px;
+        }
+
+        #session-about .session-description {
+            position: absolute;
+            left: 25px;
+            width: calc(100% - 300px);
+        }
+    }
+
+    @media only screen and (max-width: 560px) {
+        .session-welcome-content h1 {
+            font-size: 30px;
+        }
+
+        .session-content h1 {
+            font-size: 30px;
+        }
+
+        .session-description p {
+            line-height: 1.1;
+            font-size: 11px;
+            margin-bottom: 30px;
+            margin-left: 0px;
+            text-align: justify;
+        }
+        
+        .session-welcome-btn {
+            width: 65px;
+            height: 9px;
+            font-size: 12px;
+            padding: 12px 12px;
+        }
+
+        .content h2 {
+            font-size: 22px;
+        }
+
+        #form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+            display: block;
+            border: 1px solid var(--blue);
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 280px;
+            font-size: 13px;
+            font-family: 'Open sans', sans-serif;
+            border-radius: 5px;
+        }
+
+        #form-contato textarea {
+            height: 80px;
+        }
+
+        #form-contato input[type=submit] {
+            width: 80px;
+            font-size: 13px;
+            padding: 10px 20px;
+        }
+
+        @media only screen and (max-width: 560px) {
+            #sidebar h1 {
+                font-size: 14px;
+                width: 55px;
+                margin-right: 0.7rem;
+                margin-left: 0.7rem;
+            }
+
+            #sidebar {
+                height: 50px;
+            }
+    
+            #sidebar li {
+                padding: 6.5px;
+                width: 63px;
+            }
+
+            #sidebar a {
+                font-size: 12.7px;
+            }
+        }
+
+     @media only screen and (max-width: 530px)  {
+        #sidebar {
+            height: 50px;
+        }
+
+        #sidebar li {
+            padding: 4px;
+            width: 60px;
+        }
+
+        #sidebar a {
+            font-size: 12px;
+        }
+
+        .session-content h1 {
+            font-size: 25px;
+        }
+
+        .session-welcome-content h1 {
+            font-size: 25px;
+        }
+
+        .session-description p {
+            line-height: 1;
+            font-size: 11px;
+        }
+        }
+     }
