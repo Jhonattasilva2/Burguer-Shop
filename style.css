@@ -792,5 +792,53 @@ footer p {
         .session-description p {
             line-height: 1;
             font-size: 10.7px;
+            margin-bottom: 15px;
         }
+
+        #sidebar h1 {
+            font-size: 13.4px;
+            width: 54px;
+            margin-right: 0.6rem;
+            margin-left: 0.6rem;
+        }
+
+        #sidebar li {
+            padding: 2.8px;
+            width: 60px;
+        }
+
+        #sidebar a {
+            font-size: 12px;
+        }
+    }
+
+    @media only screen and (max-width: 470px) {
+        
+        .session-description p {
+            line-height: 1;
+            font-size: 8.8px;
+            margin-bottom: 12px;
+        }
+
+        #sidebar h1 {
+            font-size: 13px;
+            width: 52px;
+            margin-right: 0.6rem;
+            margin-left: 0.6rem;
+        }
+
+        #sidebar li {
+            padding: 2px;
+            width: 55px;
+        }
+
+        #sidebar a {
+            font-size: 11px;
+        }
+
+        .session-minibanner {
+            width: 210px;
+            height: 310px;
+        }
+        
     }
