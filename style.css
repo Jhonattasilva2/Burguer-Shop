@@ -186,6 +186,7 @@ section {
     background-size: cover;
     display: inline-block;
     height: 200px;
+    transition: 0.7s;
 }
 .banner-galeria:hover {
     transform: scale(1.5);
@@ -518,7 +519,6 @@ footer p {
     }    
 
     @media only screen and (max-width: 950px) {
-
         #sidebar h1 {
             font-size: 23px;
         }
@@ -529,13 +529,10 @@ footer p {
 
         #sidebar li {
             padding: 16px;
-            align-content: center;
             align-self: center;
         }
 
-
         nav {
-            align-content: center;
             display: flex;
         }
 
@@ -569,14 +566,6 @@ footer p {
             font-size: 14px;
             margin-bottom: 30px;
             margin-left: 15px;
-        }
-
-        .banner-galeria {
-            height: 200px;
-            width: 18%;
-            margin-left: .5%;
-            margin-right: .5%;
-            border-radius: 5px;
         }
 
         #sidebar a {
@@ -813,7 +802,6 @@ footer p {
     }
 
     @media only screen and (max-width: 470px) {
-        
         .session-description p {
             line-height: 1;
             font-size: 8.8px;
@@ -840,5 +828,4 @@ footer p {
             width: 210px;
             height: 310px;
         }
-        
     }
